@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Rabina!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Big Intro Section -->
+    <div id="introSection" class="intro-section">
+        <h1>Happy Birthday Rabina! 🎉</h1>
+        <p class="intro-message">
+            Today is not just another day—it's a celebration of the most amazing person in my life! Your kindness, your laughter, your dreams, and your love make the world brighter.<br>
+            I’ve prepared a magical experience for you filled with surprises, smiles, and so much love.<br>
+            From the first moment we met, you have inspired me to be better and to cherish every moment.<br>
+            Thank you for being you—unique, caring, strong, and beautiful inside and out.<br>
+            <br>
+            Get ready for a birthday adventure, with music, memories, and special messages straight from my heart!
+        </p>
+        <button id="startJourneyBtn">Start Your Surprise!</button>
+    </div>
+
+    <!-- Cake Cutting Animation -->
+    <div id="cakeSection" class="cake-section" style="display:none;">
+        <h2>It's Time to Cut the Cake! 🎂</h2>
+        <div class="cake-animation">
+            <img src="assets/cake.png" alt="Birthday Cake" class="cake-img"/>
+            <button id="cutCakeBtn">Cut the Cake!</button>
+        </div>
+        <div id="cakeMessage" class="cake-message"></div>
+    </div>
+
+    <!-- Photo Slideshow -->
+    <div id="slideshowSection" class="slideshow-section" style="display:none;">
+        <h2>Memory Lane...</h2>
+        <div class="slideshow-img-area">
+            <img id="slideshowImg" src="" alt="Birthday Slideshow" class="slideshow-img"/>
+            <div id="slideshowCaption" class="slideshow-caption"></div>
+        </div>
+        <button id="slideshowNextBtn">Next Photo</button>
+    </div>
+
+    <!-- Balloon Pop Step -->
+    <div id="popBalloonsStep" class="pop-balloons-step" style="display:none;">
+      <div class="pop-instructions">
+        <h2>Pop all the balloons to continue!</h2>
+        <p>Tap or click every balloon 🎈</p>
+      </div>
+      <div id="popBalloonsArea" class="pop-balloons-area"></div>
+      <audio id="popSound" src="assets/pop.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Super Supportive Message Step -->
+    <div id="supportiveMessage" class="supportive-message" style="display:none;">
+      <div class="supportive-content">
+        <h2>For You and Your Family 💙</h2>
+        <pre id="supportiveText"></pre>
+        <button onclick="showHeartfeltMessage()">Continue</button>
+      </div>
+    </div>
+
+    <!-- Heartfelt Message Step -->
+    <div id="heartfeltMessage" class="heartfelt-message" style="display:none;">
+      <div class="heartfelt-content">
+        <h2>From My Heart to Yours 💙</h2>
+        <p id="heartfeltText"></p>
+        <button onclick="showFinalMessage()">See Your Birthday Fireworks!</button>
+      </div>
+    </div>
+
+    <!-- Final Message & Fireworks -->
+    <div id="finalMessage" class="final-message" style="display:none;">
+        <h2>🎆 You are the best, Rabina! 🎆</h2>
+        <p>Wishing you endless happiness and love.<br>Always with you.<br>— Your Prince 💙</p>
+        <canvas id="fireworks"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
